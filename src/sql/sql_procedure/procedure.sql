@@ -3,7 +3,7 @@ CREATE PROCEDURE dbo.[TEST_PROC](
     /* 입력받는 변수 */
     @I_INPUT VARCHAR(10),
     /* 반환하는 변수 */
-    @O_OUPUT VARCHAR(10) OUT
+    @O_OUTPUT VARCHAR(10) OUT
 )
 AS
 BEGIN
@@ -12,4 +12,8 @@ BEGIN
 
     /* 지역변수 선언 및 초기화 */
     DECLARE @v_local_set INT = 10
+
+    SET @I_INPUT = 10
+    SET @O_OUTPUT = 20
+    SELECT @v_local, @v_local_set
 END
