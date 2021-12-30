@@ -43,6 +43,8 @@ SET @v_result = CASE
                     WHEN EXISTS(SELECT *
                                 FROM @TEMP_TABLE)
                         THEN 1
+                    /* WHEN @v_result = 10
+                        THEN -1 */
                     ELSE 0
     END
 
