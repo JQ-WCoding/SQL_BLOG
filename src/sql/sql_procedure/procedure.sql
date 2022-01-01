@@ -10,6 +10,22 @@ BEGIN
     /* 지역변수 선언 */
     DECLARE @v_local VARCHAR(20)
 
+    /* 내부 블록 */
+    IF (@I_INPUT < 10)
+        BEGIN
+            DECLARE @v_inner_local VARCHAR(10)
+
+            SET @v_inner_local = 10
+
+            SELECT @v_inner_local
+        END
+    ELSE
+        BEGIN
+            /* SELECT @v_inner_local */
+        END
+
+    /* SELECT @v_inner_local 에러가 발생함 */
+
     /* 지역변수 선언 및 초기화 */
     DECLARE @v_local_set INT = 10
 
