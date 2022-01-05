@@ -1,6 +1,5 @@
 /* 프로시저 생성 */
 CREATE PROCEDURE dbo.[TEST_PROC](
-    /* 전역변수 */
     @I_INPUT VARCHAR(10), /* 입력받는 변수 */
     @O_OUTPUT VARCHAR(10) OUTPUT /* 반환하는 변수(OUT 과 동일) */
 )
