@@ -12,9 +12,9 @@ BEGIN
     */
     IF (@local < 10)
         BEGIN
-            SELECT @local
+            SELECT @local  -- 1
 
-            SELECT @public
+            SELECT @public -- 매개변수 값
         END
 
     /*
@@ -25,9 +25,9 @@ BEGIN
             /* while 내부 지역변수 */
             DECLARE @addNum INT = 1
 
-            PRINT CONVERT(VARCHAR, @local)
+            PRINT CONVERT(VARCHAR, @local) -- 1, 2, 3, 4, 5...
 
-            SET @local += @addNum
+            SET @local += @addNum -- 1씩 증가
         END
 
 --     SELECT @addNum 사용 불가능
