@@ -37,4 +37,5 @@ BEGIN
     /* 전역변수 */
     SELECT @@ERROR -- 마지막 오류번호
     SELECT @@IDENTITY -- 마지막 IDENTITY 값
+
 END
