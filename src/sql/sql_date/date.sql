@@ -18,4 +18,7 @@ BEGIN
 
     -- (dd) 는 일을 의미 -> + 1일
     SELECT DATEADD(DD, 1, CONVERT(DATETIME, '20220222'))
+
+    -- 1년 추가하기
+    SELECT DATEADD(YYYY, 1, CONVERT(DATETIME, '20220223'))
 END
